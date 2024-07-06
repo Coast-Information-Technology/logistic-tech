@@ -157,6 +157,14 @@ body{
     font-family: "Articulat", sans-serif;
 }
 
+#hero h1, h4{
+    font-size: 2rem;
+}
+
+p{
+    letter-spacing: 0.7px !important;
+}
+
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
