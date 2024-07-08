@@ -1,3 +1,17 @@
+
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 1000, // 5 seconds
+      autoplayHoverPause: true
+    });
+  });
+
+
 (function ($) {
     "use strict";
 
