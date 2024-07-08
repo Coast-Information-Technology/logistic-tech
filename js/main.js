@@ -1,4 +1,43 @@
 
+// This Function below sends the email to the specified email
+function sendNewsletterEmail() {
+    var email = document.getElementById("newsletterEmail").value;
+    var subject = "Newsletter Subscription";
+    var body = `Hello,\n\nI would like to subscribe to the newsletter with the email: ${email}.\n\nThank you.`;
+
+    // Construct the mailto URL
+    var mailtoUrl = `mailto:Info@hysyncs.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the mailto URL
+    window.location.href = mailtoUrl;
+  }
+
+
+// This Function below sends a quote to the whatsapp number specified
+function sendQuote(event) {
+    event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+    // Get the form values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    var service = document.getElementById("service").value;
+    var note = document.getElementById("note").value;
+
+    // Format the message
+    var message = `Hello, I would like to request a quote:\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nService: ${service}\nSpecial Note: ${note}`;
+
+    // Encode the message for the URL
+    var encodedMessage = encodeURIComponent(message);
+
+    // Open the WhatsApp URL
+    var whatsappUrl = `https://wa.me/2347031951607?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  }
+
+
+
+
   $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
       loop: true,

@@ -344,6 +344,12 @@ p{
     background-size: cover;
 }
 
+.air-page-header{
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/Hero-Integrated-logistics.png) center center no-repeat;
+    background-size: cover;
+}
+
+
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
