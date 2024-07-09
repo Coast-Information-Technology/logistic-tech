@@ -45,7 +45,7 @@ function sendQuote(event) {
       nav: true,
       items: 1,
       autoplay: true,
-      autoplayTimeout: 1000, // 5 seconds
+      autoplayTimeout: 3000, // 5 seconds
       autoplayHoverPause: true
     });
   });
