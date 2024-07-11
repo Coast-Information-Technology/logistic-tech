@@ -1,3 +1,21 @@
+// This function send the contact form information to whatsapp
+function submitFormToWhatsApp(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const number = document.getElementById('number').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    const whatsappNumber = '2347031951607'; // WhatsApp number with country code
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone Number: ${number}\nSubject: ${subject}\nMessage: ${message}`
+    )}`;
+    
+    window.open(whatsappURL, '_blank');
+  }
+
 
 // This Function below sends the email to the specified email
 function sendNewsletterEmail() {

@@ -115,7 +115,7 @@
     <!-- Page Header End -->
 
     <!-- Contact Start -->
-    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container-fluid overflow-hidden py-2 px-lg-0">
       <div class="container contact-page py-5 px-lg-0">
         <div class="row g-5 mx-lg-0">
           <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
@@ -124,56 +124,40 @@
             <p class="mb-4">We'd love to hear from you! Whether you have questions about our services, need assistance, or want to discuss your logistics needs, our team at HYSYNC GLOBAL LIMITED is here to help. Please use the contact information or the form below to get in touch with us.
             </p>
             <div class="bg-light p-4">
-              <form>
+              <form id="contactForm" onsubmit="submitFormToWhatsApp(event)">
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                      />
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" />
                       <label for="name">Your Name</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Your Email"
-                      />
+                      <input type="email" class="form-control" id="email" placeholder="Your Email" />
                       <label for="email">Your Email</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject"
-                      />
+                      <input type="number" class="form-control" id="number" placeholder="Phone Number" />
+                      <label for="number">Phone Number</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="subject" placeholder="Subject" />
                       <label for="subject">Subject</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Leave a message here"
-                        id="message"
-                        style="height: 100px"
-                      ></textarea>
+                      <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                       <label for="message">Message</label>
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Send Message
-                    </button>
+                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                   </div>
                 </div>
               </form>
@@ -193,6 +177,22 @@
               </ul>
               <p class="fw-bold">Social Media</p> 
               <p>Stay connected with us through our social media channels for the latest updates and news.</p>
+            </div>
+
+            <!-- socials -->
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light bg-primary btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light bg-primary btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light bg-primary btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light bg-primary btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
           
@@ -215,8 +215,8 @@
     </div>
     <!-- Contact End -->
 
-    <div class="container-xxl py-5">
-      <div class="container py-5">
+    <div class="container-xxl">
+      <div class="container py-1">
         <div class="wow fadeInUp" data-wow-delay="0.1s">      
             <p class="fw-bold justify-text pt-2 fs-5">Why Contact Us?</p>
               <ul role="list">
@@ -227,6 +227,7 @@
               </ul>
         </div>
       </div>
+      <p>Thank you for reaching out to HYSYNC GLOBAL LIMITED. We look forward to assisting you with all your logistics and transportation needs!</p>
     </div>
 
            <!-- Footer Start -->
