@@ -68,6 +68,9 @@ div.owl-nav{
     opacity: 1;
 }
 
+.contact-li{
+    list-style-type: none;
+}
 
 /*** Button ***/
 .btn {
@@ -397,9 +400,6 @@ p{
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
 
-    .dropdown-menu {
-        background-color: var(--primary) !important;
-    }
 }
 
 @media (min-width: 1200px) {
