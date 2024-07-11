@@ -108,6 +108,203 @@
     </div>
     <!-- Page Header End -->
 
+        <!-- Quote End -->
+        <div class="container-xxl py-5">
+          <div class="container py-5">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Get A Quote</h6>
+                <h1 class="mb-5">Request A Free Quote!</h1>
+                <p class="mb-5">
+                  Welcome to HYSYNC GLOBAL LIMITED! We're excited to provide you with a customized quote for our logistics and transportation services. Please fill out the form below with as much detail as possible to help us understand your needs. One of our representatives will get back to you shortly with your personalized quote.
+                </p>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"
+                  ></i>
+                  <div class="ps-4">
+                    <h6>Call for any query!</h6>
+                    <h3 class="text-primary m-0">+234-7031951607</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                  <form id="quoteForm" onsubmit="sendQuote(event)">
+                    <div class="row g-3">
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          id="name"
+                          placeholder="Your Name"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="email"
+                          class="form-control border-0"
+                          id="email"
+                          placeholder="Your Email"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          id="mobile"
+                          placeholder="Your Mobile"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          id="CompanyName"
+                          placeholder="Company Name"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          id="CompanyAddress"
+                          placeholder="Company Address"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <select class="form-select border-0" id="service" style="height: 55px">
+                          <option selected>Select A Service</option>
+                          <option value="Air and Sea Clearance">Air and Sea Clearance</option>
+                          <option value="Integrated Supply Chain Management">Integrated Supply Chain Management</option>
+                          <option value="Logistics of IT Equipment">Logistics of IT Equipment</option>
+                          <option value="International Deliveries">International Deliveries</option>
+                          <option value="Supplies of Marine and Oil Drilling Materials and Consumables">Supplies of Marine and Oil Drilling Materials and Consumables</option>
+                          <option value="General Consulting">General Consulting</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          id="dos"
+                          placeholder="Destination of service"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="email"
+                          class="form-control border-0"
+                          id="origin"
+                          placeholder="Origin"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <textarea
+                          class="form-control border-0"
+                          id="note"
+                          placeholder="Special Note"
+                        ></textarea>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="date"
+                          class="form-control border-0"
+                          id="psd"
+                          placeholder="Preferred Start Date"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="date"
+                          class="form-control border-0"
+                          id="ped"
+                          placeholder="Preferred End Date"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="text"
+                          class="form-control border-0"
+                          id="tod"
+                          placeholder="Types of Goods"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="number"
+                          class="form-control border-0"
+                          id="qt"
+                          placeholder="Quantity"
+                          style="height: 55px"
+                        />
+                      </div>
+
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="number"
+                          class="form-control border-0"
+                          id="weight"
+                          placeholder="Weight"
+                          style="height: 55px"
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input
+                          type="number"
+                          class="form-control border-0"
+                          id="dimension"
+                          placeholder="Dimension"
+                          style="height: 55px"
+                        />
+                      </div>
+
+                      <div class="col-12">
+                        <textarea
+                          class="form-control border-0"
+                          id="shi"
+                          placeholder="Special Handling Instructions"
+                        ></textarea>
+                      </div>
+
+                      <div class="col-12">
+                        <textarea
+                          class="form-control border-0"
+                          id="arc"
+                          placeholder="Additional Requirements or Comments"
+                        ></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="fileUpload" class="form-label">Choose File</label>
+                        <input type="file" class="form-control" id="fileUpload" name="fileUpload" accept=".txt, .pdf, .doc, .docx, .jpg, .png">
+                      </div>
+
+                      <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit">
+                          Submit Your Request
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+  <!-- Quote End -->
+
+
        <!-- Footer Start -->
        <div
        class="container-fluid bg-dark text-light footer pt-5 wow fadeIn"
