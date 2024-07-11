@@ -396,6 +396,10 @@ p{
     .feature-text  {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
+
+    .dropdown-menu {
+        background-color: var(--primary) !important;
+    }
 }
 
 @media (min-width: 1200px) {
