@@ -1,3 +1,51 @@
+// This function send the quote form information to whatsapp
+function sendQuote(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mobile = document.getElementById('mobile').value;
+    const companyName = document.getElementById('CompanyName').value;
+    const companyAddress = document.getElementById('CompanyAddress').value;
+    const service = document.getElementById('service').value;
+    const dos = document.getElementById('dos').value;
+    const origin = document.getElementById('origin').value;
+    const note = document.getElementById('note').value;
+    const psd = document.getElementById('psd').value;
+    const ped = document.getElementById('ped').value;
+    const tod = document.getElementById('tod').value;
+    const qt = document.getElementById('qt').value;
+    const weight = document.getElementById('weight').value;
+    const dimension = document.getElementById('dimension').value;
+    const shi = document.getElementById('shi').value;
+    const arc = document.getElementById('arc').value;
+
+    const whatsappNumber = '07031951607';
+    const whatsappMessage = `
+        Name: ${name}
+        Email: ${email}
+        Mobile: ${mobile}
+        Company Name: ${companyName}
+        Company Address: ${companyAddress}
+        Service: ${service}
+        Destination of Service: ${dos}
+        Origin: ${origin}
+        Special Note: ${note}
+        Preferred Start Date: ${psd}
+        Preferred End Date: ${ped}
+        Types of Goods: ${tod}
+        Quantity: ${qt}
+        Weight: ${weight}
+        Dimension: ${dimension}
+        Special Handling Instructions: ${shi}
+        Additional Requirements or Comments: ${arc}
+    `;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappURL, '_blank');
+}
+
+
 // This function send the contact form information to whatsapp
 function submitFormToWhatsApp(event) {
     event.preventDefault();
