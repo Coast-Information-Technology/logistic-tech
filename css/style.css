@@ -352,6 +352,11 @@ p{
     background-size: cover;
 }
 
+.pol-page-header{
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/privacybanner.avif) center center no-repeat;
+    background-size: cover;
+}
+
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
